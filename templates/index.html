@@ -1,0 +1,44 @@
+<html>
+
+<div class = "outter-container">
+<h1>Welcome!</h1>
+<div class = "inner-container">
+
+{% for x in range(0, boxes): %}
+    <div class = "box"></div>
+{% endfor %}
+
+
+</div>
+</div>
+
+
+<style>
+
+.outter-container {
+    margin-top: 5%;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.inner-container {
+    margin-left: 10%;
+    margin-top: 3%;
+}
+
+.box {
+    background-color: {{ selected_color }};
+    width: 18%;
+    height: 250px;
+    display: inline-block;
+    border: 1px solid black;
+    margin-left: 3%;
+    
+}
+</style>
+
+
+</html>
